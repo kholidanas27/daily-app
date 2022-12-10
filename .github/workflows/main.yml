@@ -21,7 +21,7 @@ jobs:
       run: php artisan key:generate
 
     - name: Migration Table Update
-      run: php artisan migrate
+      run: php artisan migrate --force
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
