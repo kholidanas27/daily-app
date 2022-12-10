@@ -35,7 +35,7 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            cd public_html/app/daily-app
+            cd public_html/app/daily-app/
             php artisan migrate:fresh --seed
             php artisan config:clear
             php artisan view:clear
