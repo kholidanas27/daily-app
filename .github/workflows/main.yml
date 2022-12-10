@@ -36,7 +36,7 @@ jobs:
         with:
           command: |
             cd public_html/app/daily-app/
-            php artisan migrate:fresh --seed
+            php artisan migrate --seed
             php artisan config:clear
             php artisan view:clear
             php artisan route:cache
