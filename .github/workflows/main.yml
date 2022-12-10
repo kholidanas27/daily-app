@@ -44,3 +44,4 @@ jobs:
           user: gekatech
           port: 64000
           key: ${{ secrets.USER_PRIVATE_KEY }}
+          args: "-tt -vvv"
