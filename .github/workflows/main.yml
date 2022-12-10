@@ -40,6 +40,6 @@ jobs:
             php artisan config:clear
             php artisan view:clear
             php artisan route:cache
-          host: https://gekatech.my.id/
+          host: gekatech@gekatech.my.id
           user: gekatech
           key: ${{ secrets.USER_PRIVATE_KEY }}
