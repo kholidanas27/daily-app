@@ -27,16 +27,6 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           server-dir: /app/daily-app/
-
-      - name: Run migrations and seeders, clear cache for views, config and routes
-        uses: fifsky/ssh-action@master
-        with:
-          command: |
-            cd public_html/app/daily-app/php artisan migrate:fresh --seed --force
-            cd public_html/app/daily-app/php artisan config:clear
-            cd public_html/app/daily-app/php artisan view:clear
-            cd public_html/app/daily-app/php artisan route:cache
-          host: gekatech@gekatech.my.id
-          port: 64000
-          user: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.PRIVATE_KEY }}
+                
+      - name: Migration Table Update
+        run: php artisan migrate
