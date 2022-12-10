@@ -36,7 +36,7 @@ jobs:
             cd public_html/app/daily-app/php artisan config:clear
             cd public_html/app/daily-app/php artisan view:clear
             cd public_html/app/daily-app/php artisan route:cache
-          host: gekatech
+          host: gekatech@gekatech.my.id
           port: 64000
           user: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
