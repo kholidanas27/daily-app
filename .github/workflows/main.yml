@@ -32,11 +32,10 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           command: |
-            cd public_html/
-            /app/daily-app/php artisan migrate:fresh --seed --force
-            /app/daily-app/php artisan config:clear
-            /app/daily-app/php artisan view:clear
-            /app/daily-app/php artisan route:cache
+            cd public_html/app/daily-app/php artisan migrate:fresh --seed --force
+            cd public_html/app/daily-app/php artisan config:clear
+            cd public_html/app/daily-app/php artisan view:clear
+            cd public_html/app/daily-app/php artisan route:cache
           host: gekatech@gekatech.my.id
           port: 64000
           user: ${{ secrets.SSH_USERNAME }}
