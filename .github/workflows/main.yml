@@ -30,3 +30,16 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           server-dir: /app/daily-app/
+
+      - name: Run migrations and seeders, clear cache for views, config and routes
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            cd public_html/app/daily-app
+            php artisan migrate:fresh --seed
+            php artisan config:clear
+            php artisan view:clear
+            php artisan route:cache
+          host: https://gekatech.my.id/
+          user: gekatech
+          key: ${{ secrets.USER_PRIVATE_KEY }}
