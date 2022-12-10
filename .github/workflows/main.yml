@@ -40,7 +40,7 @@ jobs:
             php artisan config:clear
             php artisan view:clear
             php artisan route:cache
-          host: gekatech@gekatech.my.id
+          host: gekatech.my.id
           user: gekatech
           port: 64000
           key: ${{ secrets.USER_PRIVATE_KEY }}
