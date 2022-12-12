@@ -5,7 +5,7 @@
     <div class="card shadow-lg">
         <div class="card-header pb-0 pt-3 ">
             <div class="float-start">
-                <h5 class="mt-3 mb-0">Argon Configurator</h5>
+                <h5 class="mt-3 mb-0">Daily Apps Configurator</h5>
                 <p>See our dashboard options.</p>
             </div>
             <div class="float-end mt-4">
@@ -63,7 +63,7 @@
                         onclick="darkMode(this)">
                 </div>
             </div>
-            <a class="btn bg-gradient-dark w-100" href="https://www.creative-tim.com/product/argon-dashboard-laravel" target="_blank">Free Download</a>
+            <!-- <a class="btn bg-gradient-dark w-100" href="https://www.creative-tim.com/product/argon-dashboard-laravel" target="_blank">Free Download</a>
             <a class="btn btn-outline-dark w-100"
                 href="/docs/bootstrap/overview/argon-dashboard/index.html" target="_blank">View documentation</a>
             <div class="w-100 text-center">
@@ -80,7 +80,7 @@
                     class="btn btn-dark mb-0 me-2" target="_blank">
                     <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
